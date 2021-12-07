@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2</title>
+
+    <style>
+        .wrapper {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(164, 199, 199);
+            border-radius: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .wrapper .form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .wrapper .line {
+            margin-bottom: 20px;
+        }
+        
+        .wrapper button {
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        
+        .wrapper input {
+            border-radius: 5px;
+            border: 1px solid rgb(77, 122, 206);
+        }
+        
+        .wrapper h3 {
+            padding-top: 5px;
+        }
+        
+        .wrapper span {
+            font-family: Arial, Helvetica, sans-serif2;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="wrapper">
+        <h3>Giải phương trình bậc II</h3>
+        <div class="form">
+            <div class="line">
+                <span>Nhập a:</span>
+                <input type="text" name="a" id="a"></input>
+            </div>
+            <div class="line">
+                <span> Nhập b:</span>
+                <input type="text" name="b" id="b"></input>
+            </div>
+            <div class="line">
+                <span> Nhập c:</span>
+                <input type="text" name="c" id="c"></input>
+            </div>
+            <div class="line">
+                <button onclick="giaiphuongtrinhbacII()">Giải</button>
+            </div>
+            <div>
+                <span>Kết Quả:</span>
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function giaiphuongtrinhbacII() {
+        var a = Number(document.getElementById('a').value);
+        var b = Number(document.getElementById('b').value);
+        var c = Number(document.getElementById('c').value);
+
+        var delta = b * b - (4 * a * c);
+        if (delta > 0) {
+            var x1 = (-b - Math.sqrt(delta)) / (2 * a);
+            var x2 = (-b + Math.sqrt(delta)) / (2 * a);
+            document.getElementById('result').innerHTML = ' Có 2 nghiệm phân biệt là x1= ' + x1 + ', x2= ' + x2;
+        }
+
+        if (delta == 0) {
+            var x = -b / a;
+            document.getElementById('result').innerHTML = 'x= ' + x;
+        }
+        if (delta < 0) {
+            document.getElementById('result').innerHTML = 'Phương trình vô nghiệm'
+        }
+
+    }
+</script>
+
+</html>

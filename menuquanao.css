@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Helvatica, sams-serif;
+}
+
+#page a {
+    text-decoration: none;
+    /* color: rgb(26, 8, 17); */
+}
+
+.content_menu {
+    width: 1000px;
+    margin: auto;
+}
+
+.content_menu nav ul li {
+    list-style-type: none;
+}
+
+.content_menu .nav ul li {
+    list-style-type: none;
+    float: left;
+    padding: 13px 50px;
+}
+
+.content_menu ul li {
+    float: left;
+    clear: right;
+    padding: 17px;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+.content_menu ul li:hover a {
+    color: rgb(86, 15, 228);
+    cursor: pointer;
+}
+
+.content_menu li ul {
+    display: none;
+    position: absolute;
+    margin-left: -17px;
+    margin-top: 19px;
+}
+
+.content_menu ul li:hover ul {
+    display: block;
+}
+
+.content_menu ul li:hover ul li {
+    padding: 17px;
+    color: rgb(12, 3, 3);
+    border-bottom: 1px solid #999999;
+}
+
+.content_menu nav ul li:hover ul li:hover a {
+    color: white;
+}

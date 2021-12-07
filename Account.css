@@ -1,0 +1,173 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .container {
+        max-width: 550px;
+        width: 100%;
+        background: #fff;
+        padding: 10px 30px;
+        border-radius: 10px;
+        height: 613px;
+        border: 15px solid rgb(211, 211, 208);
+    }
+    
+    .container .account-title {
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        color: rgb(14, 241, 14);
+    }
+    
+    .container form .account {
+        font-size: 15px;
+    }
+    
+    .container form .form-group {
+        padding: 5px;
+    }
+    
+    form .account #form-input {
+        height: 40px;
+        width: 100%;
+        padding-left: 5px;
+        border: 1px solid rgb(221, 219, 219);
+        background: rgb(247, 247, 237);
+    }
+    
+    .container .form-birth span {
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(14, 241, 14);
+        display: flex;
+        padding-left: 10px;
+    }
+    
+    .container .form-birth {
+        display: flex;
+    }
+    
+    .container form .form-birth #form-input {
+        height: 40px;
+        width: 50px;
+        padding-left: 5px;
+        border: 1px solid rgb(221, 219, 219);
+        background: rgb(247, 247, 237);
+    }
+    
+    .container form .form-birth .form-group {
+        padding: 33px 1px;
+    }
+    /* form .account .form-gender {
+    width: calc(100% / 2 - 20px);
+} */
+    /* .account .form-group .form-input {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    } */
+    
+    form .form-gender span {
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        color: rgb(14, 241, 14);
+        padding: 10px 5px
+    }
+    
+    .container form .form-gender .form-submit {
+        padding: 10px 15px;
+        height: 40px;
+    }
+    
+    form .form-payment {
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        color: rgb(14, 241, 14);
+        display: flex;
+    }
+    
+    .container_2 {
+        display: flex;
+    }
+    
+    .form-gender [type=submit] {
+        height: 40px;
+        width: 60px;
+        border: 1px solid rgb(221, 219, 219);
+        background: rgb(247, 247, 237);
+    }
+    
+    .form-payment #submit-payment {
+        padding-top: 30px;
+    }
+    
+    .form-payment [type=submit] {
+        height: 40px;
+        width: 150px;
+        padding-left: 2px;
+        border: 1px solid rgb(221, 219, 219);
+        background: rgb(247, 247, 237);
+    }
+    
+    .form-number #form-input {
+        height: 40px;
+        width: 100%;
+        padding-left: 5px;
+        border: 1px solid rgb(221, 219, 219);
+        background: rgb(247, 247, 237);
+    }
+    
+    .form-number {
+        padding-top: 10px;
+    }
+    
+    .container_3 {
+        display: flex;
+        padding-top: 10px;
+    }
+    
+    .payment-card #form-input {
+        height: 40px;
+        width: 300px;
+        padding-left: 5px;
+        border: 1px solid rgb(221, 219, 219);
+        background: rgb(247, 247, 237);
+    }
+    
+    .payment-card #card {
+        height: 40px;
+        width: 75.5px;
+        border: 1px solid rgb(221, 219, 219);
+        background: rgb(247, 247, 237);
+    }
+    
+    .container .last {
+        padding-top: 10px;
+    }
+    
+    .container .last #term {
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        color: rgb(14, 241, 14);
+    }
+    
+    .container .last #word {
+        font-size: 15px;
+        color: darkgray;
+        padding: 10px 10px;
+        display: block;
+        text-align: center;
+    }
